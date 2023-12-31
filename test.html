@@ -14,7 +14,8 @@
 	</style>
 	<!-- 引入样式文件和JavaScript库 -->
 	<link href="css/default.css" tppabs="./css/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/default.css">
+    <script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js" tppabs="./js/garden.js"></script>
     <script type="text/javascript" src="js/functions.js" tppabs="./js/functions.js"></script>
     <body>
@@ -22,13 +23,21 @@
 	<div id="mainDiv">
         <div style="position:relative; z-index:0"  >
             <canvas class="canvasContainer" id="canvasContainer"></canvas>
-        </div>        
+        </div> 
+        <div id="floatingPlayer">
+            <!-- 播放器控件，可以根据实际情况修改 -->
+            <audio autoplay="autoplay" id="floatingAudio" controls>
+                <source src="renxi.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+               
 		<div id="content">
 			<!-- 音频播放器 -->
-			<audio autoplay="autoplay" height="100" width="100">
+			<!-- <audio autoplay="autoplay" height="100" width="100">
 				<source src="renxi.mp3" type="audio/mp3" />
 				<embed height="100" width="100" src="renxi.mp3" />
-			</audio>
+			</audio> -->
 			<!-- 代码区域 -->
 			<div id="code">
 				<span class="comments">亲爱的小狗：</span><br />
@@ -58,7 +67,7 @@
 <script>
     function navigateToOtherPage() {
         // 修改下面的链接为你想要跳转的页面
-        window.location.href = "1.html";
+        window.location.href = "2.html";
     }
 </script>
 
@@ -281,7 +290,7 @@
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2023, 1, 2);
+		together.setFullYear(2022, 12, 1);
 		together.setHours(20);
 		together.setMinutes(0);
 		together.setSeconds(0);

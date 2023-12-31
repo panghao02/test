@@ -139,3 +139,16 @@ canvas {
     background-color: rgba(11, 74, 75, 0.529);
     color: #fff;
 }
+#floatingPlayer {
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff00;
+    padding: 10px;
+    z-index: 999;
+}
+
+#floatingAudio {
+    width: 300px; /* 根据需要调整宽度 */
+}
